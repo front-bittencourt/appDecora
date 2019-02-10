@@ -1,0 +1,26 @@
+<mat-grid-list cols="1" rowHeight="100vh">
+  <mat-grid-tile>
+    <mat-card class="example-card">
+      <mat-card-header>
+        <h1>REGISTRO</h1>
+      </mat-card-header>
+      <mat-card-content>
+        <form class="example-form" #f="ngForm" (ngSubmit)="register(f)">
+          <mat-form-field class="example-full-width">
+            <input matInput name="email" placeholder="E-mail" ngModel>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <input type="password" matInput name="password" placeholder="Senha" ngModel>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <mat-select placeholder="Função" name="role" ngModel>
+              <mat-option value="admin">Administrador</mat-option>
+              <mat-option value="user">Usuário</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <button class="example-full-width" mat-raised-button color="primary">Entrar</button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

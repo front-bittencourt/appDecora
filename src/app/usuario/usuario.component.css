@@ -1,0 +1,12 @@
+table {
+  width: 100%;
+}
+
+.register button {
+  position: absolute;
+  z-index: 20;
+  font-size: 26px;
+  top: 37px;
+  right: 24px;
+  transform: scale(.88,.88);
+}

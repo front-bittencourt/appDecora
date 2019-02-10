@@ -1,0 +1,10 @@
+<mat-toolbar *ngIf="showMenu" color="primary">
+    <mat-toolbar-row>
+        <button routerLink="/home" mat-button>Home</button>
+        <button routerLink="/usuarios" mat-button>Usuários</button>
+        <div class="logout">
+            <button (click)="logout()" mat-flat-button color="warn">Logout</button>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>
+<router-outlet></router-outlet>
